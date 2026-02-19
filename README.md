@@ -1,7 +1,5 @@
 # 🌌 Aether Fastfetch & Starship Setup
 
-Kumpulan konfigurasi terminal minimalis untuk **CachyOS** (atau distro Arch-based lainnya) yang menggunakan **Fastfetch** dengan logo ASCII "Aether" dan **Starship Prompt** dengan preset Pastel Powerline.
-
 ![Screenshot Terminal](https://raw.githubusercontent.com/rendiluc21/my-fastfetch-config/main/screenshot-2026-02-19_10-54-21.png)
 
 ## 🚀 Instalasi Cepat
