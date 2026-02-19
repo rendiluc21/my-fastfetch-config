@@ -2,7 +2,7 @@
 
 # Tentukan lokasi target config
 TARGET_DIR="$HOME/.config/fastfetch"
-REPO_URL="https://github.com/username_kamu/nama_repo.git"
+REPO_URL="https://github.com/rendiluc21/my-fastfetch-config.git"
 
 echo "Updating and installing Fastfetch..."
 
