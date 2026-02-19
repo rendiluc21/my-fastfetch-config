@@ -1,29 +1,28 @@
 #!/bin/bash
 
-# Tentukan lokasi target config
+# --- KONFIGURASI ---
+USER="rendiluc21" # <--- GANTI INI
+REPO="my-fastfetch-config"
 TARGET_DIR="$HOME/.config/fastfetch"
-REPO_URL="https://github.com/rendiluc21/my-fastfetch-config.git"
 
-echo "Updating and installing Fastfetch..."
+echo "--- Memulai Setup Aether ---"
 
-# Cek apakah Fastfetch sudah terinstall (khusus Arch/CachyOS)
-if ! command -v fastfetch &> /dev/null; then
-    sudo pacman -S fastfetch --noconfirm
-fi
+# 1. Install Dependencies
+echo "Installing fastfetch & starship..."
+sudo pacman -S --noconfirm fastfetch starship curl
 
-# Backup config lama jika ada
-if [ -d "$TARGET_DIR" ]; then
-    echo "Backing up existing config..."
-    mv "$TARGET_DIR" "$TARGET_DIR.bak"
-fi
+# 2. Setup Starship Preset
+echo "Applying Starship Pastel Powerline..."
+mkdir -p ~/.config
+starship preset pastel-powerline -o ~/.config/starship.toml
 
-# Clone repo ke folder sementara lalu pindahkan isinya
-echo "Cloning your custom Aether config..."
-git clone "$REPO_URL" /tmp/my_fastfetch
+# 3. Download Config Fastfetch (Langsung ambil file, bukan git clone)
+echo "Downloading config.jsonc..."
 mkdir -p "$TARGET_DIR"
-cp -r /tmp/my_fastfetch/* "$TARGET_DIR/"
+curl -sSL "https://raw.githubusercontent.com/$USER/$REPO/main/config.jsonc" -o "$TARGET_DIR/config.jsonc"
 
-# Hapus file sampah
-rm -rf /tmp/my_fastfetch
-
-echo "Done! Sekarang coba ketik 'fastfetch' di terminal."
+echo "----------------------------------------"
+echo "SELESAI! Coba ketik 'fastfetch'."
+echo "Jika starship belum muncul, tambah baris ini di config shellmu:"
+echo "starship init fish | source  (untuk fish)"
+echo "----------------------------------------"
