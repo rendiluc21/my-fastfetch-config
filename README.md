@@ -16,4 +16,4 @@ Kumpulan konfigurasi terminal minimalis untuk **CachyOS** (atau distro Arch-base
 Cukup jalankan perintah ini di terminal kamu untuk menginstall dependencies (Fastfetch & Starship), menerapkan preset, dan memasang config Aether:
 
 ```bash
-curl -sSL [https://raw.githubusercontent.com/USER_KAMU/NAMA_REPO/main/install.sh](https://raw.githubusercontent.com/USER_KAMU/NAMA_REPO/main/install.sh) | bash
+curl -sSL [https://raw.githubusercontent.com/rendiluc21/my-fastfetch-config/main/install.sh](https://raw.githubusercontent.com/rendiluc21/my-fastfetch-config/main/install.sh) | bash
