@@ -1,0 +1,81 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/ascii-text/aether1.txt",
+    "type": "auto",
+    "padding": {
+      "top": 3,
+      "left": 3
+    }
+  },
+  "display": {
+    "separator": " =>  ",
+    "color": {
+      "keys": "magenta",
+      "output": "white"
+    },
+    "key": {
+      "width": 15
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "color": {
+        "user": "blue",
+        "at": "white",
+        "host": "blue"
+      }
+    },
+    {
+      "type": "separator",
+      "string": "──────"
+    },
+    {
+      "type": "os",
+      "key": "   OS",
+      "keyColor": "blue"
+    },
+    {
+      "type": "kernel",
+      "key": "   Kernel",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "packages",
+      "key": " 󰏖  PKGs",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "shell",
+      "key": "   Shell",
+      "keyColor": "green"
+    },
+    {
+      "type": "wm",
+      "key": "   WM",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "terminal",
+      "key": "   Term",
+      "keyColor": "blue"
+    },
+    {
+      "type": "uptime",
+      "key": " 󱎫  Uptime",
+      "keyColor": "red"
+    },
+    {
+      "type": "separator",
+      "string": "──────"
+    },
+      "break",
+    {
+      "type": "colors",
+      "symbol": "circle"
+    },
+      "break"
+  ]
+}
