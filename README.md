@@ -1,4 +1,4 @@
-# 🌌 Aether Fastfetch & Starship Setup
+# My Fastfetch & Starship Setup
 
 ![Screenshot Terminal](https://raw.githubusercontent.com/rendiluc21/my-fastfetch-config/main/screenshot-2026-02-19_10-54-21.png)
 
