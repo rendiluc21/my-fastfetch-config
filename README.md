@@ -1,5 +1,5 @@
 # my-fastfetch-config
 
-##How to install
+## How to install
 
-  ``curl -sSL https://raw.githubusercontent.com/rendiluc21/my-fastfetch-config/main/install.sh | bash``
+  ```curl -sSL https://raw.githubusercontent.com/rendiluc21/my-fastfetch-config/main/install.sh | bash```
